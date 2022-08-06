@@ -96,6 +96,19 @@ body {
         <div class="power-price">Carregando...</div>
         <div class="users-online">Carregando...</div>
     </div>
+    
+     <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" language="JavaScript">
+    $(document).ready( function () {
+        $('#appframe').load( function () {
+            $(this).contents().find("#messagesContainer").css({'background':'#111 !important','font-family':'Consolas, Courier, monospace'});
+        });
+    });
+    </script>
+    
+    
+    
+    
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script>
     const UpdatePower = () => {
